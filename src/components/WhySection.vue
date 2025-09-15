@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="why-photo-wrap">
-      <img src="@/assets/logo.png" class="why-photo" alt="Сім'я">
+      <img src="photo_project2.jpg" class="why-photo" alt="Сім'я">
     </div>
   </section>
 </template>

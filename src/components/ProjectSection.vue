@@ -1,29 +1,15 @@
 <template>
   <section class="project-section">
+    <button class="donate-btn" @click="scrollToDonate">Підтримати</button>
     <div class="project-info">
       <h2>Про проєкт</h2>
       <p class="project-desc">
         Дім Милосердя — місце, де серця знаходять дім.<br>
         Війна залишила тисячі людей без дому та надії. Разом ми можемо подарувати їм новий шанс.
       </p>
-      <img src="@/assets/logo.png" class="project-photo" alt="Сім'я">
+      <img src="photo_project1.jpg" class="project-photo" alt="Сім'я">
     </div>
-    <div class="progress-card">
-      <div class="progress-days">
-        <span class="days-number">{{ daysLeft }}</span>
-        <span class="days-label">днів</span>
-      </div>
-      <div class="progress-bar-wrap">
-        <div class="progress-bar">
-          <div class="progress-bar-inner" :style="{width: percentCollected + '%'}"></div>
-        </div>
-      </div>
-      <div class="progress-amounts">
-        <div class="amount">${{ collected }}</div>
-        <div class="goal">зібрано з ${{ goal }}</div>
-      </div>
-      <button class="donate-btn">Зробити пожертву</button>
-    </div>
+    
   </section>
 </template>
 
@@ -51,6 +37,12 @@ export default {
       const now = new Date();
       const diff = this.deadline - now;
       this.daysLeft = Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
+    },
+    scrollToDonate() {
+      const el = document.getElementById('donate-block');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     }
   }
 }
@@ -59,6 +51,8 @@ export default {
 <style scoped>
 .project-section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 40px;
   background: #fdf6ee;
   padding: 40px 0;
@@ -78,6 +72,7 @@ export default {
   width: 100%;
   border-radius: 16px;
   margin-top: 24px;
+  margin-bottom: 32px;
   object-fit: cover;
 }
 .progress-card {
@@ -127,17 +122,29 @@ export default {
   font-size: 1rem;
 }
 .donate-btn {
-  background: #ffc439;
-  color: #222;
+  background: linear-gradient(90deg, #ffc439 60%, #ffe082 100%);
+  color: #2c3e50;
   border: none;
-  border-radius: 8px;
-  padding: 12px 32px;
+  border-radius: 24px;
+  padding: 10px 32px;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s;
+  box-shadow: 0 4px 18px 0 #ffc43944;
+  margin: 0 auto 32px auto;
+  display: block;
+  transition: background 0.25s, box-shadow 0.25s, transform 0.18s;
+  letter-spacing: 0.5px;
+  min-width: 180px;
+  max-width: 260px;
+  max-height: 54px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .donate-btn:hover {
-  background: #e6b800;
+  background: linear-gradient(90deg, #ffe082 60%, #ffc439 100%);
+  box-shadow: 0 8px 24px 0 #ffc43966;
+  transform: translateY(-2px) scale(1.04);
 }
 </style>

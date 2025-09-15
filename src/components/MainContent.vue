@@ -4,7 +4,6 @@
   <WhySection />
   <GoalSection />
   <HelpSection />
-  <GallerySection />
 
      
   </main>
@@ -16,7 +15,6 @@ import ProjectSection from './ProjectSection.vue';
 import WhySection from './WhySection.vue';
 import GoalSection from './GoalSection.vue';
 import HelpSection from './HelpSection.vue';
-import GallerySection from './GallerySection.vue';
 
 export default {
   name: 'MainContent',
@@ -25,7 +23,6 @@ export default {
   WhySection,
   GoalSection,
   HelpSection,
-  GallerySection
   }
 }
 </script>

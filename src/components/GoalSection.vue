@@ -4,11 +4,11 @@
       <h2>Наша ціль</h2>
       <div class="goal-stats">
         <div class="goal-stat">
-          <div class="goal-value">$10 000</div>
+          <div class="goal-value">$62 000</div>
           <div class="goal-label">внесено завдатку</div>
         </div>
         <div class="goal-stat">
-          <div class="goal-value">$210 000</div>
+          <div class="goal-value">$230 000</div>
           <div class="goal-label">ціль</div>
         </div>
         <div class="goal-stat">
@@ -19,10 +19,17 @@
       <div class="goal-progress-bar">
         <div class="goal-progress-inner" :style="{width: percentCollected + '%'}"></div>
       </div>
-      <div class="goal-location">м. Вкажіть місто</div>
+      <div class="goal-location">м. Дніпро</div>
+      <div class="goal-countdown">
+        <span>До завершення залишилось: </span>
+        <b>{{ countdown.days }}</b> днів
+        <b>{{ countdown.hours }}</b> год
+        <b>{{ countdown.minutes }}</b> хв
+        <b>{{ countdown.seconds }}</b> сек
+      </div>
     </div>
     <div class="goal-photo-wrap">
-      <img src="@/assets/logo.png" class="goal-photo" alt="Будівля">
+      <img src="Photo_project3.jpg" class="goal-photo" alt="Будівля">
     </div>
   </section>
 </template>
@@ -32,13 +39,43 @@ export default {
   name: 'GoalSection',
   data() {
     return {
-      collected: 10000,
-      goal: 220000
+      collected: 62000,
+      goal: 230000,
+      countdown: {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0
+      },
+      countdownInterval: null
     }
   },
+
   computed: {
     percentCollected() {
       return Math.min(100, Math.round((this.collected / this.goal) * 100));
+    }
+  },
+  mounted() {
+    this.updateCountdown();
+    this.countdownInterval = setInterval(this.updateCountdown, 1000);
+  },
+  beforeUnmount() {
+    clearInterval(this.countdownInterval);
+  },
+  methods: {
+    updateCountdown() {
+      const target = new Date('2025-11-28T00:00:00');
+      const now = new Date();
+      let diff = Math.max(0, target - now);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      diff -= days * (1000 * 60 * 60 * 24);
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      diff -= hours * (1000 * 60 * 60);
+      const minutes = Math.floor(diff / (1000 * 60));
+      diff -= minutes * (1000 * 60);
+      const seconds = Math.floor(diff / 1000);
+      this.countdown = { days, hours, minutes, seconds };
     }
   }
 }
@@ -46,15 +83,15 @@ export default {
 
 <style scoped>
 .goal-section {
-  display: flex;
-  gap: 40px;
   background: #fdf6ee;
-  padding: 40px 0;
   border-radius: 24px;
   box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  padding: 40px 0;
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
 }
 .goal-info {
   max-width: 400px;
