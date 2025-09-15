@@ -8,7 +8,7 @@
       <div class="goal-stats">
         <div class="goal-stat">
           <div class="goal-value">$62 000</div>
-          <div class="goal-label">внесено завдатку</div>
+          <div class="goal-label">зібрано</div>
         </div>
         <div class="goal-stat">
           <div class="goal-value">$230 000</div>

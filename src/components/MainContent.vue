@@ -4,7 +4,10 @@
   <WhySection />
   <GoalSection />
   <HelpSection />
-
+  <ChildrenCenterSection />
+  <CommunitySpaceSection />
+  <MotherChildSection />
+  <ShelterSection />
      
   </main>
 </template>
@@ -15,6 +18,10 @@ import ProjectSection from './ProjectSection.vue';
 import WhySection from './WhySection.vue';
 import GoalSection from './GoalSection.vue';
 import HelpSection from './HelpSection.vue';
+import ChildrenCenterSection from './ChildrenCenterSection.vue';
+import CommunitySpaceSection from './CommunitySpaceSection.vue';
+import MotherChildSection from './MotherChildSection.vue';
+import ShelterSection from './ShelterSection.vue';
 
 export default {
   name: 'MainContent',
@@ -23,6 +30,10 @@ export default {
   WhySection,
   GoalSection,
   HelpSection,
+  ChildrenCenterSection,
+  CommunitySpaceSection,
+  MotherChildSection,
+  ShelterSection
   }
 }
 </script>

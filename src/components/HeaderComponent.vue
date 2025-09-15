@@ -2,7 +2,7 @@
 <template>
   <header class="cover">
     <div class="cover-content">
-      <h1>Дім Милосердя <span class="dove">🕊</span></h1>
+      <h1>Територія милосердя <span class="dove">🕊</span></h1>
       <p class="subtitle">Місце, де серця знаходять дім.</p>
     </div>
   </header>
