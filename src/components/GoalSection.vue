@@ -1,5 +1,8 @@
 <template>
   <section class="goal-section">
+    <div class="goal-photo-wrap">
+      <img src="Photo_project3.jpg" class="goal-photo" alt="Будівля">
+    </div>
     <div class="goal-info">
       <h2>Наша ціль</h2>
       <div class="goal-stats">
@@ -10,10 +13,6 @@
         <div class="goal-stat">
           <div class="goal-value">$230 000</div>
           <div class="goal-label">ціль</div>
-        </div>
-        <div class="goal-stat">
-          <div class="goal-value">3 місяця</div>
-          <div class="goal-label">строк</div>
         </div>
       </div>
       <div class="goal-progress-bar">
@@ -27,9 +26,6 @@
         <b>{{ countdown.minutes }}</b> хв
         <b>{{ countdown.seconds }}</b> сек
       </div>
-    </div>
-    <div class="goal-photo-wrap">
-      <img src="Photo_project3.jpg" class="goal-photo" alt="Будівля">
     </div>
   </section>
 </template>
@@ -103,11 +99,18 @@ export default {
 }
 .goal-stats {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 32px;
   margin-bottom: 18px;
 }
 .goal-stat {
   text-align: center;
+  min-width: 120px;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .goal-value {
   font-size: 1.5rem;
@@ -145,5 +148,47 @@ export default {
   width: 100%;
   border-radius: 16px;
   object-fit: cover;
+}
+</style>
+<style scoped>
+@media (max-width: 700px) {
+  .goal-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+    align-items: center;
+  }
+  .goal-photo-wrap {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .goal-photo {
+    width: 90vw;
+    max-width: 340px;
+    border-radius: 14px;
+  }
+  .goal-info {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .goal-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .goal-stat {
+    min-width: 0;
+    width: 100%;
+  }
+  .goal-progress-bar {
+    width: 100%;
+    min-width: 0;
+  }
 }
 </style>

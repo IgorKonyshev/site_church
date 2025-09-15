@@ -148,3 +148,31 @@ export default {
   transform: translateY(-2px) scale(1.04);
 }
 </style>
+<style scoped>
+@media (max-width: 700px) {
+  .project-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+    align-items: center;
+  }
+  .project-info {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .project-photo {
+    width: 90vw;
+    max-width: 340px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+  }
+  .donate-btn {
+    min-width: 140px;
+    max-width: 90vw;
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+</style>

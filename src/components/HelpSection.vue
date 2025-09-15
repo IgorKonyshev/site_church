@@ -72,6 +72,40 @@ export default {
 }
 </style>
 <style scoped>
+@media (max-width: 700px) {
+  .help-section {
+    padding: 20px 4vw;
+    max-width: 100vw;
+    min-width: 0;
+  }
+  .help-list {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 18px 0;
+  }
+  .help-list li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    padding-left: 0.2em;
+    gap: 8px;
+  }
+  .donate-block {
+    width: 100%;
+    margin-top: 16px;
+  }
+  .pay-icons {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pay-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+</style>
+<style scoped>
 .donate-block {
   display: flex;
   flex-direction: column;

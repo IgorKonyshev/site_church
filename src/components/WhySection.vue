@@ -66,3 +66,38 @@ export default {
   object-fit: cover;
 }
 </style>
+<style scoped>
+@media (max-width: 700px) {
+  .why-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+    align-items: center;
+  }
+  .why-info {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .why-photo-wrap {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .why-photo {
+    width: 90vw;
+    max-width: 340px;
+    border-radius: 14px;
+  }
+  .why-info ul {
+    padding-left: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 340px;
+  }
+}
+</style>
