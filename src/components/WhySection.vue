@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="why-photo-wrap">
-      <img src="photo_project2.jpg" class="why-photo" alt="Сім'я">
+      <img src="Photo_project2.jpg" class="why-photo" alt="Сім'я">
     </div>
   </section>
 </template>

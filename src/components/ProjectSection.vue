@@ -7,7 +7,7 @@
         Дім Милосердя — місце, де серця знаходять дім.<br>
         Війна залишила тисячі людей без дому та надії. Разом ми можемо подарувати їм новий шанс.
       </p>
-      <img src="photo_project1.jpg" class="project-photo" alt="Сім'я">
+      <img src="Photo_project1.jpg" class="project-photo" alt="Сім'я">
     </div>
     
   </section>
