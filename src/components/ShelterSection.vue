@@ -2,7 +2,7 @@
   <section class="info-section">
     <div class="info-photo-wrap">
       <!-- Фото для секции (замените src на нужное) -->
-      <img src="shelter.jpg" class="info-photo" alt="Притулок для людей у складних життєвих обставинах">
+      <img src="Family.jpg" class="info-photo" alt="Притулок для людей у складних життєвих обставинах">
     </div>
     <div class="info-content">
       <h2>Притулок для людей у складних життєвих обставинах</h2>

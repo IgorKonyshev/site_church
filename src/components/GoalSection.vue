@@ -1,8 +1,6 @@
 <template>
   <section class="goal-section">
-    <div class="goal-photo-wrap">
-      <img src="Photo_project3.jpg" class="goal-photo" alt="Будівля">
-    </div>
+   
     <div class="goal-info">
       <h2>Наша ціль</h2>
       <div class="goal-stats">
@@ -26,6 +24,8 @@
         <b>{{ countdown.minutes }}</b> хв
         <b>{{ countdown.seconds }}</b> сек
       </div>
+    </div> <div class="goal-photo-wrap">
+      <img src="Photo_project3.jpg" class="goal-photo" alt="Будівля">
     </div>
   </section>
 </template>

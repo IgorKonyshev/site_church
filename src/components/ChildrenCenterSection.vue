@@ -2,7 +2,7 @@
   <section class="info-section">
     <div class="info-photo-wrap">
       <!-- Фото для секции (замените src на нужное) -->
-      <img src="children_center.jpg" class="info-photo" alt="Центр розвитку для дітей">
+      <img src="Child.jpg" class="info-photo" alt="Центр розвитку для дітей">
     </div>
     <div class="info-content">
       <h2>Центр розвитку для дітей</h2>
