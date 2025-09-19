@@ -1,6 +1,5 @@
 <template>
   <section class="goal-section">
-   
     <div class="goal-info">
       <h2>Наша ціль</h2>
       <div class="goal-stats">
@@ -14,25 +13,27 @@
         </div>
       </div>
       <div class="goal-progress-bar">
-        <div class="goal-progress-inner" :style="{width: percentCollected + '%'}"></div>
+        <div
+          class="goal-progress-inner"
+          :style="{ width: percentCollected + '%' }"
+        ></div>
       </div>
       <div class="goal-location">м. Дніпро</div>
       <div class="goal-countdown">
         <span>До завершення залишилось: </span>
-        <b>{{ countdown.days }}</b> днів
-        <b>{{ countdown.hours }}</b> год
-        <b>{{ countdown.minutes }}</b> хв
-        <b>{{ countdown.seconds }}</b> сек
+        <b>{{ countdown.days }}</b> днів <b>{{ countdown.hours }}</b> год
+        <b>{{ countdown.minutes }}</b> хв <b>{{ countdown.seconds }}</b> сек
       </div>
-    </div> <div class="goal-photo-wrap">
-      <img src="Photo_project3.jpg" class="goal-photo" alt="Будівля">
+    </div>
+    <div class="goal-photo-wrap">
+      <img src="Photo_project3.jpg" class="goal-photo" alt="Будівля" />
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'GoalSection',
+  name: "GoalSection",
   data() {
     return {
       collected: 62000,
@@ -41,16 +42,16 @@ export default {
         days: 0,
         hours: 0,
         minutes: 0,
-        seconds: 0
+        seconds: 0,
       },
-      countdownInterval: null
-    }
+      countdownInterval: null,
+    };
   },
 
   computed: {
     percentCollected() {
       return Math.min(100, Math.round((this.collected / this.goal) * 100));
-    }
+    },
   },
   mounted() {
     this.updateCountdown();
@@ -61,7 +62,7 @@ export default {
   },
   methods: {
     updateCountdown() {
-      const target = new Date('2025-11-28T00:00:00');
+      const target = new Date("2025-11-28T00:00:00");
       const now = new Date();
       let diff = Math.max(0, target - now);
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -72,16 +73,16 @@ export default {
       diff -= minutes * (1000 * 60);
       const seconds = Math.floor(diff / 1000);
       this.countdown = { days, hours, minutes, seconds };
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
 .goal-section {
   background: #fdf6ee;
   border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
   padding: 40px 0;
   margin-top: 40px;
   display: flex;

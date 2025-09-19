@@ -2,17 +2,21 @@
   <section class="info-section">
     <div class="info-photo-wrap">
       <!-- Фото для секции (замените src на нужное) -->
-      <img src="Child.jpg" class="info-photo" alt="Центр розвитку для дітей">
+      <img src="Child.jpg" class="info-photo" alt="Центр розвитку для дітей" />
     </div>
     <div class="info-content">
       <h2>Центр розвитку для дітей</h2>
       <p>
-        Діти – це майбутнє, яке потребує любові та турботи вже сьогодні. У центрі з ними працюватимуть професійні психологи та педагоги.
+        Діти – це майбутнє, яке потребує любові та турботи вже сьогодні. У
+        центрі з ними працюватимуть професійні психологи та педагоги.
       </p>
       <ul class="info-list">
         <li>Ігрові зони допоможуть їм відчути радість дитинства.</li>
         <li>Творчі майстерні розкриють їхні таланти.</li>
-        <li>Заняття з розвитку та відпочинкові зони подарують стабільність і відчуття, що світ може бути добрим.</li>
+        <li>
+          Заняття з розвитку та відпочинкові зони подарують стабільність і
+          відчуття, що світ може бути добрим.
+        </li>
       </ul>
     </div>
   </section>
@@ -20,8 +24,8 @@
 
 <script>
 export default {
-  name: 'ChildrenCenterSection'
-}
+  name: "ChildrenCenterSection",
+};
 </script>
 
 <style scoped>
@@ -31,7 +35,7 @@ export default {
   background: #fdf6ee;
   padding: 40px 0;
   border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
   justify-content: center;
   align-items: center;
   margin-top: 40px;

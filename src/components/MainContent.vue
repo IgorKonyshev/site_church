@@ -1,37 +1,36 @@
 <template>
   <main class="main-content">
-  <ProjectSection />
-  <WhySection />
-  <ChildrenCenterSection />
-  <MotherChildSection />
-  <ShelterSection />
-  <GoalSection />
-  <HelpSection />
+    <ProjectSection />
+    <WhySection />
+    <ChildrenCenterSection />
+    <MotherChildSection />
+    <ShelterSection />
+    <GoalSection />
+    <HelpSection />
   </main>
 </template>
 
 <script>
-
-import ProjectSection from './ProjectSection.vue';
-import WhySection from './WhySection.vue';
-import GoalSection from './GoalSection.vue';
-import ChildrenCenterSection from './ChildrenCenterSection.vue';
-import MotherChildSection from './MotherChildSection.vue';
-import ShelterSection from './ShelterSection.vue';
-import HelpSection from './HelpSection.vue';
+import ProjectSection from "./ProjectSection.vue";
+import WhySection from "./WhySection.vue";
+import GoalSection from "./GoalSection.vue";
+import ChildrenCenterSection from "./ChildrenCenterSection.vue";
+import MotherChildSection from "./MotherChildSection.vue";
+import ShelterSection from "./ShelterSection.vue";
+import HelpSection from "./HelpSection.vue";
 
 export default {
-  name: 'MainContent',
+  name: "MainContent",
   components: {
     ProjectSection,
-  WhySection,
-  GoalSection,
-  HelpSection,
-  ChildrenCenterSection,
-  MotherChildSection,
-  ShelterSection
-  }
-}
+    WhySection,
+    GoalSection,
+    HelpSection,
+    ChildrenCenterSection,
+    MotherChildSection,
+    ShelterSection,
+  },
+};
 </script>
 
 <style scoped>

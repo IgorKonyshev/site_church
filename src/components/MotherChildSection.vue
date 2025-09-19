@@ -1,23 +1,24 @@
 <template>
   <section class="info-section">
-    
     <div class="info-content">
       <h2>Дім матері та дитини</h2>
       <p>
-        Тут зможуть знайти захист жінки з дітьми, які постраждали від насильства чи втратили житло через війну. Вони більше не залишаться наодинці зі своїм болем і страхами – тут їх чекатиме турбота, безпека та нова надія.
+        Тут зможуть знайти захист жінки з дітьми, які постраждали від насильства
+        чи втратили житло через війну. Вони більше не залишаться наодинці зі
+        своїм болем і страхами – тут їх чекатиме турбота, безпека та нова надія.
       </p>
     </div>
     <div class="info-photo-wrap">
       <!-- Фото для секции (замените src на нужное) -->
-      <img src="Mother.jpg" class="info-photo" alt="Дім матері та дитини">
+      <img src="Mother.jpg" class="info-photo" alt="Дім матері та дитини" />
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'MotherChildSection'
-}
+  name: "MotherChildSection",
+};
 </script>
 
 <style scoped>
@@ -27,7 +28,7 @@ export default {
   background: #fdf6ee;
   padding: 40px 0;
   border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
   justify-content: center;
   align-items: center;
   margin-top: 40px;

@@ -3,7 +3,9 @@
     <div class="why-info">
       <h2>Чому це важливо</h2>
       <p>
-        Війна залишила тисячі людей без дому, безпеки та стабільності. Сотні сімей залишилися без даху над головою, багато мам із дітьми опинилися у безвихідному становищі, а діти втратили відчуття захищеності.
+        Війна залишила тисячі людей без дому, безпеки та стабільності. Сотні
+        сімей залишилися без даху над головою, багато мам із дітьми опинилися у
+        безвихідному становищі, а діти втратили відчуття захищеності.
       </p>
       <ul>
         <li>Мами з малюками залишилися одні без підтримки та житла.</li>
@@ -12,15 +14,15 @@
       </ul>
     </div>
     <div class="why-photo-wrap">
-      <img src="Photo_project2.jpg" class="why-photo" alt="Сім'я">
+      <img src="Photo_project2.jpg" class="why-photo" alt="Сім'я" />
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'WhySection'
-}
+  name: "WhySection",
+};
 </script>
 
 <style scoped>
@@ -30,7 +32,7 @@ export default {
   background: #fdf6ee;
   padding: 40px 0;
   border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
   justify-content: center;
   align-items: center;
   margin-top: 40px;

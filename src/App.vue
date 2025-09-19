@@ -1,19 +1,18 @@
-
 <template>
   <HeaderComponent />
   <MainContent />
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue';
-import MainContent from './components/MainContent.vue';
+import HeaderComponent from "./components/HeaderComponent.vue";
+import MainContent from "./components/MainContent.vue";
 
 export default {
   components: {
     HeaderComponent,
-    MainContent
-  }
-}
+    MainContent,
+  },
+};
 </script>
 
 <style>
@@ -27,6 +26,6 @@ export default {
 }
 body {
   margin: 0;
-  background-color: #F5F5DC;
+  background-color: #f5f5dc;
 }
 </style>

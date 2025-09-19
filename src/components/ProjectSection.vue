@@ -4,30 +4,32 @@
     <div class="project-info">
       <h2>Про проєкт</h2>
       <p class="project-desc">
-        Дім Милосердя — місце, де серця знаходять дім.<br>
-        Війна залишила тисячі людей без дому та надії. Разом ми можемо подарувати їм новий шанс.
+        Дім Милосердя — місце, де серця знаходять дім.<br />
+        Ми — Благодійний фонд «Підтримка-Є». Збираємо кошти на придбання
+        території, де знайдуть прихисток 50 матерів із дітьми, які втратили дім
+        через війну або інші обставини! Тут вони отримають безпеку, турботу та
+        шанс почати життя заново.
       </p>
-      <img src="Photo_project1.jpg" class="project-photo" alt="Сім'я">
+      <img src="Photo_project1.jpg" class="project-photo" alt="Сім'я" />
     </div>
-    
   </section>
 </template>
 
 <script>
 export default {
-  name: 'ProjectSection',
+  name: "ProjectSection",
   data() {
     return {
       collected: 10000,
       goal: 220000,
-      deadline: new Date('2025-11-28'),
-      daysLeft: 0
-    }
+      deadline: new Date("2025-11-28"),
+      daysLeft: 0,
+    };
   },
   computed: {
     percentCollected() {
       return Math.min(100, Math.round((this.collected / this.goal) * 100));
-    }
+    },
   },
   mounted() {
     this.updateDaysLeft();
@@ -39,13 +41,13 @@ export default {
       this.daysLeft = Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
     },
     scrollToDonate() {
-      const el = document.getElementById('donate-block');
+      const el = document.getElementById("donate-block");
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -57,7 +59,7 @@ export default {
   background: #fdf6ee;
   padding: 40px 0;
   border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
   justify-content: center;
 }
 .project-info {
@@ -78,7 +80,7 @@ export default {
 .progress-card {
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
   padding: 32px 24px;
   min-width: 280px;
   display: flex;

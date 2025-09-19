@@ -2,12 +2,18 @@
   <section class="info-section">
     <div class="info-photo-wrap">
       <!-- Фото для секции (замените src на нужное) -->
-      <img src="Family.jpg" class="info-photo" alt="Притулок для людей у складних життєвих обставинах">
+      <img
+        src="Family.jpg"
+        class="info-photo"
+        alt="Притулок для людей у складних життєвих обставинах"
+      />
     </div>
     <div class="info-content">
       <h2>Притулок для людей у складних життєвих обставинах</h2>
       <p>
-        Ми відкриваємо двері для тих, хто опинився без даху над головою чи підтримки. Тут кожен зможе відновитися, відчути цінність свого життя та отримати шанс почати все спочатку.
+        Ми відкриваємо двері для тих, хто опинився без даху над головою чи
+        підтримки. Тут кожен зможе відновитися, відчути цінність свого життя та
+        отримати шанс почати все спочатку.
       </p>
     </div>
   </section>
@@ -15,8 +21,8 @@
 
 <script>
 export default {
-  name: 'ShelterSection'
-}
+  name: "ShelterSection",
+};
 </script>
 
 <style scoped>
@@ -26,7 +32,7 @@ export default {
   background: #fdf6ee;
   padding: 40px 0;
   border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
   justify-content: center;
   align-items: center;
   margin-top: 40px;
