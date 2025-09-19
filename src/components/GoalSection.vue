@@ -1,15 +1,15 @@
 <template>
   <section class="goal-section">
     <div class="goal-info">
-      <h2>Наша ціль</h2>
+  <h2>{{ $t('goalTitle') }}</h2>
       <div class="goal-stats">
         <div class="goal-stat">
           <div class="goal-value">$62 000</div>
-          <div class="goal-label">зібрано</div>
+          <div class="goal-label">{{ $t('collectedLabel') }}</div>
         </div>
         <div class="goal-stat">
           <div class="goal-value">$230 000</div>
-          <div class="goal-label">ціль</div>
+          <div class="goal-label">{{ $t('goalLabel') }}</div>
         </div>
       </div>
       <div class="goal-progress-bar">
@@ -18,11 +18,11 @@
           :style="{ width: percentCollected + '%' }"
         ></div>
       </div>
-      <div class="goal-location">м. Дніпро</div>
+  <div class="goal-location">{{ $t('location') }}</div>
       <div class="goal-countdown">
-        <span>До завершення залишилось: </span>
-        <b>{{ countdown.days }}</b> днів <b>{{ countdown.hours }}</b> год
-        <b>{{ countdown.minutes }}</b> хв <b>{{ countdown.seconds }}</b> сек
+        <span>{{ $t('countdown') }} </span>
+        <b>{{ countdown.days }}</b> {{ $t('days') }} <b>{{ countdown.hours }}</b> {{ $t('hours') }}
+        <b>{{ countdown.minutes }}</b> {{ $t('minutes') }} <b>{{ countdown.seconds }}</b> {{ $t('seconds') }}
       </div>
     </div>
     <div class="goal-photo-wrap">

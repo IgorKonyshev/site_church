@@ -9,11 +9,9 @@
       />
     </div>
     <div class="info-content">
-      <h2>Притулок для людей у складних життєвих обставинах</h2>
+      <h2>{{ $t('shelterTitle') }}</h2>
       <p>
-        Ми відкриваємо двері для тих, хто опинився без даху над головою чи
-        підтримки. Тут кожен зможе відновитися, відчути цінність свого життя та
-        отримати шанс почати все спочатку.
+        {{ $t('shelterDesc') }}
       </p>
     </div>
   </section>
@@ -26,6 +24,21 @@ export default {
 </script>
 
 <style scoped>
+ .shelter-btn {
+   background: #ffc439;
+   color: #2c3e50;
+   border: none;
+   border-radius: 8px;
+   padding: 14px 32px;
+   font-size: 1.15rem;
+   font-weight: 600;
+   cursor: pointer;
+   margin-top: 12px;
+   transition: background 0.2s;
+ }
+ .shelter-btn:hover {
+   background: #ffe082;
+ }
 .info-section {
   display: flex;
   gap: 40px;

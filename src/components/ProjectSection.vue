@@ -1,17 +1,13 @@
 <template>
   <section class="project-section">
-    <button class="donate-btn" @click="scrollToDonate">Підтримати</button>
+  <button class="donate-btn" @click="scrollToDonate">{{ $t('shelterBtn') }}</button>
     <div class="project-info">
-      <h2>Про проєкт <a href="https://www.instagram.com/pidtrimka_e/"
-          ><img src="pidtrimka.png" alt="Pidtrimka" title="Pidtrimka" id="pidtrimka-img"
-        /></a></h2>
-      <p class="project-desc">
-        Територія Милосердя — місце, де серця знаходять дім. <br />
-        Ми — Благодійний фонд «Підтримка-Є». Збираємо кошти на придбання
-        території, де знайдуть прихисток 50 матерів із дітьми, які втратили дім
-        через війну або інші обставини! Тут вони отримають безпеку, турботу та
-        шанс почати життя заново.
-      </p>
+        <h2>{{ $t('projectTitle') }} <a href="https://www.instagram.com/pidtrimka_e/"
+            ><img src="pidtrimka.png" alt="Pidtrimka" title="Pidtrimka" id="pidtrimka-img"
+          /></a></h2>
+        <p class="project-desc">
+          {{ $t('projectDesc') }}
+        </p>
       <img src="Photo_project1.jpg" class="project-photo" alt="Сім'я" />
     </div>
   </section>
