@@ -2,9 +2,11 @@
   <section class="project-section">
     <button class="donate-btn" @click="scrollToDonate">Підтримати</button>
     <div class="project-info">
-      <h2>Про проєкт</h2>
+      <h2>Про проєкт <a href="https://www.instagram.com/pidtrimka_e/"
+          ><img src="pidtrimka.png" alt="Pidtrimka" title="Pidtrimka" id="pidtrimka-img"
+        /></a></h2>
       <p class="project-desc">
-        Дім Милосердя — місце, де серця знаходять дім.<br />
+        Територія Милосердя — місце, де серця знаходять дім. <br />
         Ми — Благодійний фонд «Підтримка-Є». Збираємо кошти на придбання
         території, де знайдуть прихисток 50 матерів із дітьми, які втратили дім
         через війну або інші обставини! Тут вони отримають безпеку, турботу та
@@ -144,6 +146,12 @@ export default {
   white-space: nowrap;
   overflow: hidden;
 }
+#pidtrimka-img {
+    width: 60px;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
 .donate-btn:hover {
   background: linear-gradient(90deg, #ffe082 60%, #ffc439 100%);
   box-shadow: 0 8px 24px 0 #ffc43966;
